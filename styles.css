@@ -1,0 +1,342 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+/* Dynamic Gradient Animation */
+header {
+  position: relative;
+  background: linear-gradient(-45deg, #004080, #0066cc, #00ccff, #004080);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  height: 100vh;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.header-content h1 {
+    font-size: 3em;
+    margin: 0;
+    font-weight: bold;
+}
+
+.header-content h2 {
+    font-weight: normal;
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+.header-content p {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 5px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.btn.call {
+    background-color: #28a745;
+}
+
+.btn.email {
+    background-color: #007bff;
+}
+
+.btn.whatsapp {
+    background-color: #25d366;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background-color: #222;
+}
+
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h3 {
+    margin-top: 0;
+    font-size: 1.8em;
+    color: #004080;
+    border-bottom: 2px solid #28a745;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #333;
+}
+
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+ul li i {
+    color: #28a745;
+    margin-right: 10px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+
+
+
+.social-links {
+    margin-top: 20px;
+    text-align: center;  /* Center social links */
+}
+
+.social-links a {
+    color: white;
+    font-size: 2em;  /* Increased size for social icons */
+    margin: 0 15px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-links a:hover {
+    color: #25d366; /* WhatsApp green or your preferred accent color */
+    transform: scale(1.2);  /* Slight zoom effect */
+}
+
+
+footer {
+    text-align: center;
+    font-size: 0.9em;
+    padding: 20px;
+    background-color: #004080;
+    color: white;
+    margin-top: 40px;
+    position: relative;
+}
+
+.office-location {
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #fff;
+    display: flex;
+    justify-content: center; /* Ensure it’s centered horizontally */
+    align-items: center; /* Align vertically */
+    gap: 10px;
+}
+
+.office-location a {
+    color: #25d366; /* This is the accent color for the Google Maps link */
+    text-decoration: none;
+    font-size: 1.5em; /* Make the pin icon larger */
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.office-location a:hover {
+    color: #fff; /* Hover effect */
+}
+
+.office-location i {
+    margin-right: 8px; /* Space between the pin icon and the text */
+}
+
+/* Header photo */
+.profile-photo {
+    width: 150px;          /* Adjust size */
+    height: 150px;         /* Adjust size */
+    border-radius: 50%;    /* Circular shape */
+    object-fit: cover;     /* Ensures the image fits the circle */
+    margin-bottom: 20px;   /* Space between the image and text */
+}
+
+/* About Me photo */
+.about-photo {
+    width: 120px;          /* Adjust size */
+    height: 120px;         /* Adjust size */
+    border-radius: 50%;    /* Circular shape */
+    object-fit: cover;     /* Ensures the image fits the circle */
+    margin-right: 20px;    /* Space between the image and text */
+    float: left;           /* Aligns the photo to the left of the text */
+}
+
+.office-location {
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center; /* center horizontally */
+}
+
+.office-location a {
+    color: #25d366; /* WhatsApp green or pick your brand color */
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.office-location a:hover {
+    color: #fff;
+}
+
+/* Style the Navbar */
+.navbar {
+    background-color: #004080; /* You can change the color */
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #28a745;
+}
+
+/* Dropdown Menu */
+.navbar .dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.navbar .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #28a745;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 10px;
+    text-align: left;
+}
+
+.navbar .dropdown-content a {
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.navbar .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.navbar .dropdown-content a:hover {
+    background-color: #004080;
+}
+
+/* Optional: You can add some styling for the Download section */
+.download-forms {
+    margin: 20px 0;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.download-forms ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.download-forms li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.download-forms a {
+    text-decoration: none;
+    color: #28a745; /* Your preferred color */
+    margin-left: 8px;
+}
+
+.download-forms a:hover {
+    text-decoration: underline;
+}
+
+.download-forms i {
+    color: #28a745;
+}
